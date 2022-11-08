@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(123, 209, 123);
+  font-family: "Roboto" sans-serif;
+  text-align: center;
+}
+  
+ul a {
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(58, 56, 56);
+}
+
+/*LOGO*/
+
+#logo-index {
+  background-color: rgb(189, 241, 189);
+  display: block;
+}
+
+.logo {
+  width: 40rem;
+  max-width: 100%;
+}
+
+/*HEADER*/
+
+header {
+  top: 0;
+  display: flex center;
+  background-color: gray;
+}
+
+/*HEADER PAGINAS.HTLM*/
+
+#pages {
+  display: inline-flex;
+  background-color: gray;
+  z-index: 1;
+}
+
+.logo-pages {
+  background-color: rgb(172, 241, 172);
+  width: 10%;
+  padding: 2rem;
+}
+
+/*MENU NAVEGACIÓN CON INLINE*/
+
+.navegacion {
+  list-style: none;
+  color: rgb(48, 46, 46);
+  background-color: rgb(233, 245, 233);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.navegacion-pages {
+  display: flex;
+  color: rgb(48, 46, 46);
+  background-color: rgb(233, 245, 233);
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+/*BEM*/
+div  {
+  padding: 2rem;
+  display: flex center;
+  flex-wrap: wrap;
+  margin: 2rem;
+
+}
+
+.card {
+  border: solid .2rem gray;
+  width: 30rem;
+  padding: 1rem;
+  display: inline-block;
+  }
+
+p {
+  text-align: center;
+}
+
+.card__parrafo {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+.card__img {
+  width: 20rem;
+  height: 20rem;
+  max-width: 100%;
+}
+
+.boton {
+  display: inline-block;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+
+
+/*ESTILO ARCHIVO ADICIONAL.HTML*/
+
+.caja-apadrina {
+  display: inline;
+  /*PROPIEDADES DECORATIVAS*/
+  border: solid 1px black;
+  padding: 5px;
+  display: block;
+  font-size: 32px;
+  font-family: sans-serif;
+  overflow: auto;
+}
+
+/*SE USA PARA COLOCAR UN FONDO
+
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  */
+
+h1 {
+  color: rgb(48, 46, 46);
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+
+#img-contenido {
+  margin-bottom: 160 px;
+  background-color: gray;
+  width: auto;
+}
+
