@@ -198,6 +198,26 @@ html {
   
 }
 
+@media screen and (max-width: 820px) {
+  .grid-container-apadrina{
+    grid-template-columns: 1fr;
+      grid-template-rows: 250px auto auto 400px 100px;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer"
+      ;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .contenido, .card-apadrina {
+    flex-direction: column;
+  }
+
+
 /*PAGINA CONOCENOS */
 
 .grid-container-conocenos {
