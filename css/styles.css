@@ -201,7 +201,7 @@ html {
 @media screen and (max-width: 820px) {
   .grid-container-apadrina{
     grid-template-columns: 1fr;
-      grid-template-rows: 250px auto auto 400px 100px;
+      grid-template-rows: 250px auto auto 100px;
       grid-template-areas: 
       "header"
       "nav"
@@ -229,7 +229,7 @@ html {
   /* DECLARAMOS COLUMNAS*/
   grid-template-columns: repeat (3,1fr);
   /* DECLARAMOS FILAS*/
-  grid-template-rows: 300px 100px auto 150px;
+  grid-template-rows: 300px auto auto 100px;
   grid-template-areas: 
     "header header header"
     "nav nav nav"
