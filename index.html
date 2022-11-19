@@ -23,112 +23,124 @@
 
   
   </head>
-  <body id="grilla">    
-<!--header-->
-    <section id="logo">
-      <header >
+  <body>
+    
+    <div class="grid-container">
+        
+      <header class="encabezado">
         <!--LOGO INDEX.HTML-->
-        <img src="img/logoRS-N.png" alt="Logo" class="logo"/>
+        <img class="logo" src="img/logoRS-N.png" alt="Logo"/>
       </header>
-    </section>
-    
-    <section  id="nav" >
-      <nav>
+      
+      <nav class="menu">
+        
         <ul>
-          <div>
-            <li>
-              <a href="index.html">Inicio</a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href="pages/apadrina.html">Apadrina</a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href="pages/donaciones.html">Donaciones</a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href="pages/futuras_huellas.html">Futuras huellas</a>
-            </li>
-          </div>
-          <div>
-            <li>
-              <a href="pages/contacto.html">Contacto</a>
-            </li>
-          </div>
-        </ul>
+          
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+        
+          <li>
+            <a href="pages/apadrina.html">Apadrina</a>
+          </li>
+        
+          <li>
+            <a href="pages/donaciones.html">Donaciones</a>
+          </li>
+        
+          <li>
+            <a href="pages/futuras_huellas.html">Futuras huellas</a>
+          </li>
+        
+          <li>
+            <a href="pages/contacto.html">Contacto</a>
+          </li>
+        
+        </ul>        
       </nav>
-    </section>
-
-    <section id="texto">
-      <h1>Nuestras secciones</h1>
-    </section>
       
-    <section id="productos">
+      <main class="contenido">
 
-      <div class="card"> <!--BLOQUE-->
-        <img src="img/images (1).png" alt="Apadrina" class="card__img"> <!--BLOQUE + IMG-->
+        <div class="card"> <!--BLOQUE-->
+          <img src="img/images (1).png" alt="Apadrina" class="card__img"> <!--BLOQUE + IMG-->
 
-        <p class="card__parrafo">PROXIMAMENTE</p> <!--BLOQUE + ELEMENTO-->
-        <p class="card__parrafo">Apadrina</p> <!--BLOQUE + ELEMENTO-->
-        <p class="card__parrafo--grande">precio</p> <!--BLOQUE + ELEMENTO + MODIFICADOR-->
+          <h2 class="card__parrafo">PROXIMAMENTE</h2> <!--BLOQUE + ELEMENTO-->
+          <h3 class="card__parrafo">Apadrina</h3> <!--BLOQUE + ELEMENTO-->
+          <h3 class="card__parrafo--grande">precio</h3> <!--BLOQUE + ELEMENTO + MODIFICADOR-->
 
-        <a>
-          <button class="boton">Ir</button>
-        </a>
-      </div>
+          <a>
+            <button class="boton">Ir</button>
+          </a>
+        </div>
 
-      <div class="card">
-        <!--BLOQUE-->
-        <img src="img/images (2).png" alt="uturas_huellas" class="card__img">
-        <!--BLOQUE + IMG-->
-      
-        <p class="card__parrafo">PROXIMAMENTE</p>
-        <!--BLOQUE + ELEMENTO-->
-        <p class="card__parrafo">Donaciones</p>
-        <!--BLOQUE + ELEMENTO-->
-        <p class="card__parrafo--grande">precio</p>
-        <!--BLOQUE + ELEMENTO + MODIFICADOR-->
-      
-        <a>
-          <button class="boton">Ir</button>
-        </a>   
-      </div> 
-  
-      <div class="card">
-        <!--BLOQUE-->
-        <img src="img/images.png" alt="Donaciones" class="card__img">
-        <!--BLOQUE + IMG-->
-      
-        <p class="card__parrafo">PROXIMAMENTE</p>
-        <!--BLOQUE + ELEMENTO-->
-        <p class="card__parrafo">Futuras huellas</p>
-        <!--BLOQUE + ELEMENTO-->
-        <p class="card__parrafo--grande">precio</p>
-        <!--BLOQUE + ELEMENTO + MODIFICADOR-->
-      
-        <a>
-          <button class="boton">Ir</button>
-        </a>
-      </div>
-    </section>
+        <div class="card">
+          <!--BLOQUE-->
+          <img src="img/images (2).png" alt="uturas_huellas" class="card__img">
+          <!--BLOQUE + IMG-->
+        
+          <h2 class="card__parrafo">PROXIMAMENTE</h2>
+          <!--BLOQUE + ELEMENTO-->
+          <h3 class="card__parrafo">Donaciones</h3>
+          <!--BLOQUE + ELEMENTO-->
+          <h3 class="card__parrafo--grande">precio</h3>
+          <!--BLOQUE + ELEMENTO + MODIFICADOR-->
+        
+          <a>
+            <button class="boton">Ir</button>
+          </a>   
+        </div> 
     
-    <section id="info">
-      <p> Refugio Sevilla es el hogar permanente de 25 animalitos recogidos de la
-        calle</p>
-    </section>
+        <div class="card">
+          <!--BLOQUE-->
+          <img src="img/images.png" alt="Donaciones" class="card__img">
+          <!--BLOQUE + IMG-->
+        
+          <h2 class="card__parrafo">PROXIMAMENTE</h2>
+          <!--BLOQUE + ELEMENTO-->
+          <h3 class="card__parrafo">Conocenos</h3>
+          <!--BLOQUE + ELEMENTO-->
+          <h3 class="card__parrafo--grande">precio</h3>
+          <!--BLOQUE + ELEMENTO + MODIFICADOR-->
+        
+          <a>
+            <button class="boton">Ir</button>
+          </a>
+        </div>
 
-    <section id="footer">
-      <p>Sitio desarrollado por d_zasa</p>
-    </section>
+      </main>
       
-    <!---->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <aside class="publicidad">
 
+        <img src="https://dummyimage.com/150x150/bd184f/fff" alt="">
+        
+        <div>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque atque fugit fugiat 
+        </div>
+
+        <img src="https://dummyimage.com/150x150/bd184f/fff" alt="">
+        
+        <div>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque atque fugit fugiat 
+        </div>
+
+
+      </aside>
+      
+      <footer class="pie">
+        <div>
+          <a href=""><img src="https://dummyimage.com/50x50/bd184f/fff" alt=""></a>
+          <a href=""><img src="https://dummyimage.com/50x50/bd184f/fff" alt=""></a>
+          <a href=""><img src="https://dummyimage.com/50x50/bd184f/fff" alt=""></a>
+        </div>
+
+        <div>
+          <h4>Sitio desarrollado por d_zasa</h4>
+        </div>
+      </footer> 
+        
+      <!---->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </div>
   </body>
 </html>
 
