@@ -16,7 +16,7 @@ html {
   /* DECLARAMOS COLUMNAS*/
   grid-template-columns: repeat (3,1fr);
   /* DECLARAMOS FILAS*/
-  grid-template-rows: 300px 100px auto 150px;
+  grid-template-rows: 300px 70px auto 150px;
   grid-template-areas: 
     "header header header"
     "nav nav nav"
@@ -28,6 +28,9 @@ html {
 .encabezado {
   background-color:rgb(103, 160, 111);
   grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   
 }
 .encabezado, .logo{
@@ -112,7 +115,7 @@ html {
     width:100%;
     margin: 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 150px auto 300px 100px;
+    grid-template-rows: 250px 70px auto 300px 100px;
     grid-template-areas: 
     "header header"
     "nav nav"
@@ -126,11 +129,11 @@ html {
     flex-direction: row;
   }
 }
-git :window-inactive
+
 @media screen and (max-width: 820px) {
   .grid-container {
     grid-template-columns: 1fr;
-      grid-template-rows: 250px 100px auto 250px 100px;
+      grid-template-rows: 250px auto auto 400px 100px;
       grid-template-areas: 
       "header"
       "nav"
@@ -163,7 +166,7 @@ git :window-inactive
   /* DECLARAMOS COLUMNAS*/
   grid-template-columns: repeat (3,1fr);
   /* DECLARAMOS FILAS*/
-  grid-template-rows: 300px 100px auto 150px;
+  grid-template-rows: 300px 70px auto 150px;
   grid-template-areas: 
     "header header header"
     "nav nav nav"
@@ -173,20 +176,22 @@ git :window-inactive
 }
 
 .contenido-apadrina {
-  background-color: rgb(167, 247, 191);
   grid-area: main;
+  background-color: rgb(167, 247, 191);
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 2rem;
+  gap: 3rem;
 }
 
 .card-apadrina{
   background-color: burlywood;
   border: solid .2rem gray;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   gap: 1rem;
  
