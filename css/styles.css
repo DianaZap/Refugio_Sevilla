@@ -8,7 +8,7 @@ html {
 }
 
 .grid-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -152,13 +152,13 @@ git :window-inactive
 /* PAGES APADRINA */
 
 .grid-container-apadrina {
-  width: 80%;
+  width: 90%;
   margin: auto;
   color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: grid;
   /* DECLARAMOS COLUMNAS*/
-  grid-template-columns: repeat (3,1fr);
+  grid-template-columns: repeat (4,1fr);
   /* DECLARAMOS FILAS*/
   grid-template-rows: 300px 100px auto 150px;
   grid-template-areas: 
@@ -171,8 +171,18 @@ git :window-inactive
 
 .contenido-apadrina {
   background-color: rgb(140, 164, 231);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 2rem;
-  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center; 
+}
+
+.contenido, .item {
+  background-color: burlywood;
+  margin: 2rem;
+  
+  
+
+
 }
