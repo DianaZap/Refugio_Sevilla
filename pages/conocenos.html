@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="../img/logoRS-N.png">
     <!--CSS PROPIO-->
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Historias</title>
+    <title>Refugio Sevilla</title>
 </head>
 <body>
     <!--header-->
-    <div class="grid-container-conocenos">
+    <div class="grid-container-apadrina">
         
         <!--HEADER-->
         <header class="encabezado">
@@ -47,54 +47,68 @@
             </ul>
         </nav>
     
-    <section>
-        <h1>Conocenos</h1>
+        <main>
 
-        <div class="caja-historias">
-            
-            <p>Completa el formulario con tus datos y te contactaremos a la brevedad</p>
-
-            <form>
-                <fieldset>
-                    <legend>Información Personal:</legend>
-
-                    <p>Sexo:</p>
-
-                    <input type="radio" name="sexo" id="hombre">
-                    <label for="">Hombre</label>
-
-                    <input type="radio" name="sexo" id="mujer">
-                    <label for="">Mujer</label>
-
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="nombre" placeholder="Nombre">
+            <section>
+                <h1>Conocenos</h1>
+        
+                <div class="caja-historias">
+                    
+                    <p>Completa el formulario con tus datos y te contactaremos a la brevedad</p>
+        
+                    <form>
+                        <fieldset>
+                            <legend>Información Personal:</legend>
+        
+                            <p>Sexo:</p>
+        
+                            <input type="radio" name="sexo" id="hombre">
+                            <label for="">Hombre</label>
+        
+                            <input type="radio" name="sexo" id="mujer">
+                            <label for="">Mujer</label>
+        
+                            <div>
+                                <label for="nombre">Nombre:</label>
+                                <input type="nombre" placeholder="Nombre">
+                            </div>
+        
+                            <div>
+                                <label for="apellido">Apellido:</label>
+                                <input type="apellido" placeholder="Apellido">
+                            </div>
+        
+                            <div>
+                                <label for="asunto">Asunto:</label>
+                                <select id="asunto">
+                                    <option disabled>Seleccione una opción</option>
+                                    <option>Apadrina</option>
+                                    <option>Donaciones</option>
+                                    <option>Futuras Huellas </option>
+                                </select>
+                            </div>
+        
+                            <input type="submit"
+                            value="Enviar">            
+                        </fieldset>
                     </div>
+                </form>
+            </section>
+        
+            <<footer class="pie">
+                <div>
+                    <a href=""><img src="https://dummyimage.com/50x50/bd184f/fff" alt=""></a>
+                    <a href=""><img src="https://dummyimage.com/50x50/bd184f/fff" alt=""></a>
+                    <a href=""><img src="https://dummyimage.com/50x50/bd184f/fff" alt=""></a>
+                </div>
 
-                    <div>
-                        <label for="apellido">Apellido:</label>
-                        <input type="apellido" placeholder="Apellido">
-                    </div>
+                <div>
+                    <h4>Sitio desarrollado por d_zasa</h4>
+                </div>
+            </footer> 
 
-                    <div>
-                        <label for="asunto">Asunto:</label>
-                        <select id="asunto">
-                            <option disabled>Seleccione una opción</option>
-                            <option>Apadrina</option>
-                            <option>Donaciones</option>
-                            <option>Futuras Huellas </option>
-                        </select>
-                    </div>
 
-                    <input type="submit"
-                    value="Enviar">            
-                </fieldset>
-            </div>
-        </form>
-    </section>
-
-        <footer>
-            <p>Sitio desarrollado por d_zasa</p>
-        </footer>
+        </main>
+    
 </body>
 </html>
