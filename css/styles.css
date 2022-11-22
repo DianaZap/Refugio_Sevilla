@@ -56,7 +56,7 @@ html {
   color: white;
 }
 
-.contenido, .contenido-apadrina {
+.contenido, .contenido-apadrina, .contenido-donaciones {
   background-color: rgb(145, 241, 145);
   grid-area: main;
   display: flex;
@@ -216,7 +216,7 @@ html {
     flex-direction: column;
   }
 
-  .contenido, .card-apadrina {
+  .contenido, .card-apadrina, .contenido-donaciones {
     flex-direction: column;
   }
 /*PAGINA DONACIONES */
