@@ -1,0 +1,31 @@
+/*PAGINA DONACIONES */
+.contenido-donaciones {
+    grid-area: main;
+    background-color: rgb(167, 247, 191);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+/*PAGINA CONOCENOS */
+
+.grid-container-conocenos {
+width: 90%;
+margin: auto;
+color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+display: grid;
+/* DECLARAMOS COLUMNAS*/
+grid-template-columns: repeat (3,1fr);
+/* DECLARAMOS FILAS*/
+grid-template-rows: 300px 70 auto 150px;
+grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"
+    ;
+}
