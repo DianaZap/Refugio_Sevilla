@@ -1,58 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS DE BOOTSTRAP -->
+    <!-- Linkeando boostrap con archivos descargados-->
+    <!-- <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css"> -->
+    
+    <!--linkeando boostrap con CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <!--SIRVE PARA PONER EL LOGO EN LA PESTANA DE LA WEB-->
-    <link rel="shortcut icon" href="../img/logoRS-N.png">
-    <!--CSS PROPIO-->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <title>Donaciones</title>
+    <link rel="shortcut icon" href="../Refugio Sevilla/img/logoRS-N.png">
+    
+    <!--GOOGLE FONTS-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100;300;500&display=swap"
+    rel="stylesheet"
+/> -->
+
+<!--CSS PROPIO-->
+<link rel="stylesheet" href="../css/styles.css" />
+<title>Refugio Sevilla</title>
+
+
 </head>
 <body>
-    <!--header-->
-    <div class="grid-container-donaciones">
-        
-        <!--HEADER-->
-        <header class="encabezado">
-            
-            <!-- LOGO -->
 
-            <img class="logo" src="../img/logoRS-N.png" alt="Logo">
-
-        </header>
-
-        <nav class="menu">
-            <ul >
-
-                <li> 
-                    <a href="../index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="apadrina.html">Apadrina</a>
-                </li>
-
-                <li> 
-                    <a href="donaciones.html">Donaciones</a>
-
-                <li>
-                    <a href="futuras_huellas.html">Futuras huellas</a>
-                </li>
-
-                <li>
-                    <a href="conocenos.html">Conocenos</a>
-                </li>
-            </ul>
-        </nav>
-        
+<div class="grid-container">
     
-        <section>
-        <h1>Donaciones</h1>
-
-        <p>Gracias por tu colaboración</p>
-        </section>
+    <header class="encabezado">
+    <!--LOGO INDEX.HTML-->
+    <img class="logo" src="../img/logoRS-N.png" alt="Logo"/>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg bg-light" class="container-fluid">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="../img/logoRS-N-sin texto.png" alt="Logo" height="40 rem">
+        </header></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../pages/apadrina.html">Apadrina</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../pages/donaciones.html">Donaciones</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../pages/conocenos.html">Conocenos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled">Futuras Huellas</a>
+            </li>
+        </ul>
+        </div>
     </div>
+    </nav>
+    
+    <main class="contenido" class="container">
+
+        <div>
+            <h1>Donaciones</h1>
+        </div>
+
+        <img src="https://dummyimage.com/150x150/bd184f/fff" alt="">
+        
+        <div>
+            <h3>PAYPal! </h3>
+        </div>
+
+        <img src="https://dummyimage.com/150x150/bd184f/fff" alt="">
+        
+        <div>
+            <h3>Nequi ó Daviplata</h3>
+        </div>
+
+        <div>
+            <h4>Gracias por tu colaboración </h4>
+        </div>
+        
+    </main>
+
+    <footer class="pie">
+        <div>
+            <a href="http://instagram.com/refugio_sevilla?igshid=NDc0ODY0MjQ="><img class="footer-img" src="../img/instagram logo RS.png" alt="Instagram"></a>
+            <a href="http://facebook.com/SashaSashita12"><img class="footer-img" src="../img/facebook logo RS.png" alt=""></a>
+            <a href="https://www.tiktok.com/@refugio_sevilla?_t=8XYi73jc6C6&_r=1
+            "><img class="footer-img" src="../img/tiktok logo RS.png" alt=""></a>
+        </div>
+
+        <div>
+            <h4>Sitio desarrollado por d_zasa</h4>
+        </div>
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

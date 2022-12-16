@@ -11,27 +11,21 @@ html {
   width: 90%;
   margin: auto;
   color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: grid;
   /* DECLARAMOS COLUMNAS*/
-  grid-template-columns: repeat (3,1fr);
+  grid-template-columns: repeat 3, 1fr;
   /* DECLARAMOS FILAS*/
   grid-template-rows: 300px 70px auto 150px;
-  grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main aside"
-    "footer footer footer"
-    ;
+  grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
 }
 
 .encabezado {
-  background-color:rgb(103, 160, 111);
+  background-color: rgb(103, 160, 111);
   grid-area: header;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
 
 .encabezado {
@@ -39,7 +33,7 @@ html {
 }
 
 .menu, img .logo {
-  background-color:rgb(127, 194, 136);
+  background-color: rgb(127, 194, 136);
   grid-area: nav;
   height: 100%;
 }
@@ -67,9 +61,8 @@ html {
   align-items: center;
 }
 
-
 .card {
-  border: solid .2rem gray;
+  border: solid 0.2rem gray;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,77 +100,58 @@ html {
 }
 
 .pie img {
-  margin:10px;
+  margin: 10px;
 }
 
 .footer-img {
   height: 6rem;
 }
-/*--- MEDIA QUERY--- */
 
+/*--- MEDIA QUERY--- */
 @media screen and (max-width: 1050px) {
   .grid-container {
-    width:100%;
+    width: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 250px 70px auto 300px 100px;
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "aside aside"
-    "footer footer" 
-    ;
+    grid-template-areas: "header header" "nav nav" "main main" "aside aside" "footer footer";
   }
-
-  .publicidad {
-    flex-direction: row;
-  }
+}
+.publicidad {
+  flex-direction: row;
 }
 
 @media screen and (max-width: 820px) {
   .grid-container {
     grid-template-columns: 1fr;
-      grid-template-rows: 250px auto auto 400px 100px;
-      grid-template-areas: 
-      "header"
-      "nav"
-      "main"
-      "aside"
-      "footer"
-      ;
+    grid-template-rows: 250px auto auto 400px 100px;
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
   }
-  .menu ul {
-    flex-direction: column;
-  }
+}
+.menu ul {
+  flex-direction: column;
+}
 
-  .contenido, .card {
-    flex-direction: column;
-  }
+.contenido, .card {
+  flex-direction: column;
+}
 
-  .publicidad {
-    flex-direction: column;
-  }
+.publicidad {
+  flex-direction: column;
 }
 
 /* PAGES APADRINA */
-
 .grid-container-apadrina {
   width: 90%;
   margin: auto;
   color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: grid;
   /* DECLARAMOS COLUMNAS*/
-  grid-template-columns: repeat (3,1fr);
+  grid-template-columns: repeat 3, 1fr;
   /* DECLARAMOS FILAS*/
   grid-template-rows: 300px 70px auto 150px;
-  grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
 }
 
 .contenido-apadrina, .contenido-donaciones, .contenido-donaciones {
@@ -191,66 +165,55 @@ html {
   gap: 3rem;
 }
 
-.card-apadrina{
+.card-apadrina {
   background-color: burlywood;
-  border: solid .2rem gray;
+  border: solid 0.2rem gray;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
- 
-  
 }
 
 @media screen and (max-width: 820px) {
-  .grid-container-apadrina{
+  .grid-container-apadrina {
     grid-template-columns: 1fr;
-      grid-template-rows: 250px auto auto 150px;
-      grid-template-areas: 
-      "header"
-      "nav"
-      "main"
-      "footer"
-      ;
+    grid-template-rows: 250px auto auto 150px;
+    grid-template-areas: "header" "nav" "main" "footer";
   }
-  .menu ul {
-    flex-direction: column;
-  }
+}
+.menu ul {
+  flex-direction: column;
+}
 
-  .contenido, .card-apadrina, .contenido-donaciones {
-    flex-direction: column;
-  }
+.contenido, .card-apadrina, .contenido-donaciones {
+  flex-direction: column;
+}
+
 /*PAGINA DONACIONES */
-  .contenido-donaciones {
-    grid-area: main;
-    background-color: rgb(167, 247, 191);
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-    gap: 3rem;
-  }
+.contenido-donaciones {
+  grid-area: main;
+  background-color: rgb(167, 247, 191);
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+}
 
 /*PAGINA CONOCENOS */
-
 .grid-container-conocenos {
   width: 90%;
   margin: auto;
   color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: grid;
   /* DECLARAMOS COLUMNAS*/
-  grid-template-columns: repeat (3,1fr);
+  grid-template-columns: repeat 3, 1fr;
   /* DECLARAMOS FILAS*/
   grid-template-rows: 300px 70 auto 150px;
-  grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
 }
 
 /*PAGINA HUELLAS */
@@ -258,16 +221,13 @@ html {
   width: 90%;
   margin: auto;
   color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: grid;
   /* DECLARAMOS COLUMNAS*/
-  grid-template-columns: repeat (3,1fr);
+  grid-template-columns: repeat 3, 1fr;
   /* DECLARAMOS FILAS*/
   grid-template-rows: 300px 70 auto 150px;
-  grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
-    ;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
 }
+
+/*# sourceMappingURL=styles.css.map */
