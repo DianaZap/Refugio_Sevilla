@@ -1,18 +1,36 @@
 /*---Las VARIABLES siempre inician con signo $---*/
 
 /*variables para colores*/
-$bg-body: black;
-$color-principal:
+$bg-body: rgb(80, 124, 86);
+$color-principal:red;
 $color-secundario: rgb(103, 160, 111);
-$color-terciario:
+$color-terciario:red;
 $contenido: rgb(167, 247, 191);
 
 /*variables fuentes*/
 $fuente-grande: 3rem;
 $fuente-mediana: 2rem;
-$fuente-pqueña: 1rem;
+$fuente-pequeña: 1rem;
+$letra-clara: #fff;
+
+$fuente-titulo:arial;
+$fuente: sans-serif;
+
 
 /*variable de las media queries*/
 $pantalla-mediana: 768px;
 $pantalla-grande: 992px;
 $pantalla-xg: 1200px;
+
+/*variable imagen*/
+$logo: 40rem;
+$logo-menu:10rem;
+$card-apadrina:20rem;
+
+/*extend*/
+.botones-generales {
+
+    font-weight: bold;
+    padding: 5px 15px;
+    cursor:pointer;
+}

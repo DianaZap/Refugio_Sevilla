@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $bg-body;
+    font-style: $fuente;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 90%;
+
+    menu {
+    height: 40rem;
+    }
+
+    .card__img {
+
+    }
+}
+
+.encabezado {
+    background-color:$color-secundario;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    .logo{
+    background-color:rgb(127, 194, 136);
+    grid-area: header;
+    max-width: 100%;
+    height: $logo;
+    }
+
+    .logo-menu {
+        background-color: antiquewhite;
+        grid-area: nav;
+        max-width: 100%;
+        height: $logo-menu;
+    }
+}
+.menu {
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        font-size: 2rem;
+        }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        }
+
+    nav-item {
+        background-color: gray;
+
+        /*ampersand*/
+        & a:hover {
+            background-color: aquamarine;
+            color: $letra-clara;
+        }
+    }
+}
+
+.botones-generales {
+
+    font-weight: bold;
+    padding: 5px 15px;
+    cursor:pointer;
+
+    .boton {
+        margin: 2rem;
+        padding: 1rem;
+        }
+
+    
+}   
+
+
+.pie {
+    background-color: #78939a;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin:10px;
+    }
+}
+
+.footer-img {
+    height: 6rem;
+}

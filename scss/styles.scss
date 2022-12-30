@@ -1,7 +1,9 @@
 /*---para enlazar las scss de cada pagina---*/
 @import "variables";
-@import ":home";
+@import "globales";
+@import "home";
 @import "apadrina";
 @import "donaciones";
 @import "conocenos";
 @import "huellas";
+

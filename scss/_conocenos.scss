@@ -1,0 +1,19 @@
+/*PAGINA CONOCENOS */
+
+.grid-container-conocenos {
+    width: 90%;
+    margin: auto;
+    color: black;
+    font-family:$fuente;
+    display: grid;
+    /* DECLARAMOS COLUMNAS*/
+    grid-template-columns: repeat (3,1fr);
+    /* DECLARAMOS FILAS*/
+    grid-template-rows: 300px 70 auto 150px;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+        ;
+    }
